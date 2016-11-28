@@ -13,16 +13,16 @@ const int tcorr=(int)(1*pow(L/8.0,0.58));
 const double TC=2/log(1+sqrt(2.0));//TC=2.269;
 
 //GRUPO1
-//const double Tmin=2.2;
-//const double Tmax=2.4;
-//const double Tstep=(Tmax-Tmin)/20;
-//const int Nmuestras=1000000;
+const double Tmin=2.4;
+const double Tmax=2.8;
+const double Tstep=(Tmax-Tmin)/40;
+const int Nmuestras=1000000;
 
 //GRUPO2
-const double Tmin=TC-1.3/pow(L/8.0,1.0);
-const double Tmax=TC+3.0/pow(L/8.0,1.0);
-const double Tstep=(Tmax-Tmin)/500;
-const int Nmuestras=10000;
+//const double Tmin=TC-1.3/pow(L/8.0,1.0);
+//const double Tmax=TC+3.0/pow(L/8.0,1.0);
+//const double Tstep=(Tmax-Tmin)/500;
+//const int Nmuestras=10000;
 
 class SpinSystem{
 private:
