@@ -497,7 +497,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/dDBXhV
 \end_layout
 
 \end_inset
@@ -1313,7 +1313,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/dDBXhV
 \end_layout
 
 \end_inset
@@ -1626,7 +1626,18 @@ ada por el coeficiente de transmisión
 \end_layout
 
 \begin_layout Standard
-Nuevamente usando el notebook escrito en python disponible online en .
+Nuevamente usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/dDBXhV
+\end_layout
+
+\end_inset
+
+..
  En la simulación usamos 
 \begin_inset Formula $\omega=0.5$
 \end_inset
@@ -2048,7 +2059,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/Vki2jJ
 \end_layout
 
 \end_inset
@@ -2784,7 +2795,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/Vki2jJ
 \end_layout
 
 \end_inset
@@ -3083,7 +3094,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/Vki2jJ
 \end_layout
 
 \end_inset
@@ -3660,7 +3671,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/BTPL6n
 \end_layout
 
 \end_inset
@@ -4396,7 +4407,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/BTPL6n
 \end_layout
 
 \end_inset
@@ -4695,7 +4706,7 @@ status open
 
 \begin_layout Plain Layout
 
-https://goo.gl/BuxA4s
+https://goo.gl/BTPL6n
 \end_layout
 
 \end_inset
@@ -4712,7 +4723,7 @@ reference "eq:parama-1"
 
 \end_inset
 
-, se procedió  a graficar el campo eléctrico en función de la coordenada
+, se procedió a graficar el campo eléctrico en función de la coordenada
  
 \begin_inset Formula $z$
 \end_inset
