@@ -1,0 +1,4777 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{amsmath} % or simply amstext
+\newcommand{\angstrom}{\textup{\AA}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Solución - Parcial 2 : Electrodinámica II
+\end_layout
+
+\begin_layout Author
+Keith Patarroyo
+\end_layout
+
+\begin_layout Date
+9 de Mayo de 2017
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Componente para entregar el martes 09 de Mayo de 2017:
+\end_layout
+
+\begin_layout Section*
+Problema 2
+\end_layout
+
+\begin_layout Standard
+Sea una lámina plana de espesor 
+\begin_inset Formula $d$
+\end_inset
+
+ cuya permitividad se corresponde con el modelo de plasma para altas frecuencias
+ 
+\begin_inset Formula $(\omega\gg\omega_{0},\:\omega\gg\Gamma)$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $\varepsilon(\omega)=\varepsilon_{0}(1-\omega_{p}^{2}/\omega^{2})$
+\end_inset
+
+.
+ Dicha lámina está rodeada de vacío.
+ Considere la incidencia normal de ondas planas que están linealmente polarizada
+s.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+Escriba la matriz de transferencia de la estructura tomando como planos
+ de referencia dos planos situados por fuera de la lámina pero a una distancia
+ infinitesimal de esta , es decir, en 
+\begin_inset Formula $z=0^{-}$
+\end_inset
+
+ y 
+\begin_inset Formula $z=d^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+\end_layout
+
+\begin_layout Standard
+Consideremos la región propuesta en el problema,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename a_figure.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Región del problema inicial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces las matrices de transferencia entre las regiones 1-2, 2-3, 3-4
+ son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{T}_{1-2}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{0}} &  & \frac{Y_{0}-Y_{1}}{2Y_{0}}\\
+\\
+\frac{Y_{0}-Y_{1}}{2Y_{0}} &  & \frac{Y_{1}+Y_{0}}{2Y_{0}}
+\end{matrix}\right],\qquad\mathbf{T}_{2-3}=\left[\begin{matrix}e^{-ikd} &  & 0\\
+\\
+0 &  & e^{ikd}
+\end{matrix}\right],\qquad\mathbf{T}_{3-4}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{1}} &  & \frac{Y_{1}-Y_{0}}{2Y_{1}}\\
+\\
+\frac{Y_{1}-Y_{0}}{2Y_{1}} &  & \frac{Y_{1}+Y_{0}}{2Y_{1}}
+\end{matrix}\right].\label{eq:a_matrices}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la matriz de transferencia que convierte el campo eléctrico
+ de la región 1-4 es,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\mathbf{T}_{1-2}\mathbf{T}_{2-3}\mathbf{T}_{3-4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiendo esta matriz explícitamente tenemos,
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\left[\begin{matrix}\frac{e^{-ikd}(Y_{1}+Y_{0})^{2}-(Y_{1}-Y_{0})^{2}e^{ikd}}{4Y_{0}Y_{1}} &  & \frac{-e^{-ikd}(Y_{1}^{2}-Y_{0}^{2})+(Y_{0}^{2}-Y_{1}^{2})e^{ikd}}{4Y_{0}Y_{1}}\\
+\\
+\frac{-e^{-ikd}(Y_{0}^{2}-Y_{1}^{2})+(Y_{0}^{2}-Y_{1}^{2})e^{ikd}}{4Y_{0}Y_{1}} &  & \frac{-e^{-ikd}(Y_{0}-Y_{1})^{2}+(Y_{0}+Y_{1})^{2}e^{ikd}}{4Y_{0}Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos escribir esta matriz usando un poco de álgebra de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\left[\begin{matrix}\frac{-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})+\cos(kd)(2Y_{0}Y_{1})}{2Y_{0}Y_{1}} &  & \frac{i\sin(kd)(Y_{0}^{2}-Y_{1}^{2})}{2Y_{0}Y_{1}}\\
+\\
+\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{2Y_{0}Y_{1}} &  & \frac{i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})+\cos(kd)(2Y_{0}Y_{1})}{2Y_{0}Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+Grafique los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, mostrando separadamente sus correspondientes módulos y fases en función
+ de la frecuencia 
+\begin_inset Formula $\omega$
+\end_inset
+
+.(4 gráficas de módulos y 4 gráficas de fases)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+\end_layout
+
+\begin_layout Standard
+Sabemos que dada una matriz de transferencia 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+ que modele la incidencia normal de ondas planas linealmente polarizadas,
+ esta estará dada en términos de los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}=\left[\begin{matrix}\frac{1}{t} &  & \frac{-r'}{t}\\
+\\
+\frac{r}{t} &  & \frac{tt'-rr'}{t}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de la matriz 
+\series bold
+
+\begin_inset Formula $\mathbf{T}_{1-4}$
+\end_inset
+
+ 
+\series default
+reconocemos los coeficientes 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ , 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ como,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{1-4}=\frac{2Y_{0}Y_{1}}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}, & \qquad & t'_{1-4}=\frac{2Y_{0}Y_{1}}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})},\\
+r_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}, & \qquad & r'_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asimismo podemos dividir por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ todas las expresiones y usando 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ ,
+\begin_inset Newline linebreak
+\end_inset
+
+y 
+\begin_inset Formula $k=\frac{\omega}{v}=\frac{\omega}{c}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ obtenemos,
+\begin_inset Formula 
+\begin{equation}
+t_{1-4}=t'_{1-4}=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)-i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)},\label{eq:a_t}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{1-4}=r'_{1-4}=\frac{i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]}{\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)-i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)}.\label{eq:a_r}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora procedemos a graficar el módulo y la fase de los coeficientes.
+\end_layout
+
+\begin_layout Paragraph*
+Coeficientes de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos primero que 
+\begin_inset Formula $t_{1-4}=t'_{1-4}$
+\end_inset
+
+, esto era de esperarse ya que el sistema físico es simétrico respecto a
+ 
+\begin_inset Formula $d/2$
+\end_inset
+
+, para poder graficar estos dos coeficientes se procedió a fijar los parámetros
+ 
+\begin_inset Formula $\omega_{p}$
+\end_inset
+
+ , 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{p}=0.49,\qquad d=100.0,\qquad c=1.0.\label{eq:parama}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de transmisión
+ , primero utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_t"
+
+\end_inset
+
+ se muestra el coeficiente 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+, 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_transmision_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_transmision_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_transmision_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_transmision_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficientes de reflexión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos nuevamente que 
+\begin_inset Formula $r_{1-4}=r'_{1-4}$
+\end_inset
+
+, ahora usando los mismos parámetros de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama"
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de reflexión
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_r"
+
+\end_inset
+
+ , primero se muestra el coeficiente 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_reflection_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_reflection_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_reflection_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_reflection_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+ Grafique las transmitancias, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+, y las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+, en función de la frecuencia 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ De paso compruebe si 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}=1$
+\end_inset
+
+y 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+\end_layout
+
+\begin_layout Standard
+La transmitancia 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y la reflectancia 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+, están definidas como la razón entre la potencia de entrada 
+\begin_inset Formula $P_{in}$
+\end_inset
+
+ , la potencia transmitida 
+\begin_inset Formula $P_{tr}$
+\end_inset
+
+ y la potencia de entrada 
+\begin_inset Formula $P_{in}$
+\end_inset
+
+ y la potencia reflejada 
+\begin_inset Formula $P_{R}$
+\end_inset
+
+ respectivamente.
+ Por el teorema de Poynting complejo sabemos que 
+\begin_inset Formula 
+\[
+P=\frac{1}{2}Re(EH^{*})=\frac{1}{2}Y\left|E\right|^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la transmitancia 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y la reflectancia 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ quedan,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{T}=\frac{P_{tr}}{P_{in}}=\frac{Y_{tr}\left|E_{tr}\right|^{2}}{Y_{in}\left|E_{in}\right|^{2}}=\frac{Y_{tr}}{Y_{in}}\left|t\right|^{2},\label{eq:transmitance}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}=\frac{P_{R}}{P_{in}}=\frac{Y_{in}\left|E_{R}\right|^{2}}{Y_{in}\left|E_{in}\right|^{2}}=\left|r\right|^{2}.\label{eq:reflectance}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para este problema 
+\begin_inset Formula $Y_{tr}/Y_{in}=1$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $Y_{tr}/Y_{in}=1$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , ahora nuevamente usando el notebook escrito en python disponible online
+ en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+, se procedió a graficar las transmitancias y las reflectancias , utilizando
+ las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_t"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transmitance"
+
+\end_inset
+
+ se muestra las transmitancias 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ y con las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:a_r"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reflectance"
+
+\end_inset
+
+ se muestra las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_Trasmi_Refle_one.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename a_Trasmi_Refle_one_p.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancias, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+, y las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+ Se puede ver gráficamente que 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}=1$
+\end_inset
+
+y 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+ Asumiendo que la onda incide desde la izquierda, grafique el campo eléctrico
+ en función de la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=2d$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+ 
+\end_layout
+
+\begin_layout Standard
+Ya que la onda incide desde la izquierda tenemos que el vector del campo
+ eléctrico viajante(onda hacia la izquierda - y onda hacia la derecha +)
+ en el plano 4 de la figura, es dado por ,
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+E_{4}^{+}\\
+E_{4}^{-}
+\end{array}\right)=\left(\begin{array}{c}
+t\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la evolución espacial del campo en la región 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ de la derecha es dada por la propagación de una onda hacia la derecha multiplic
+ada por el coeficiente de transmisión 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Para hallar el campo en las otras regiones usamos las matrices de transferencia
+ 
+\begin_inset Formula $\mathbf{T}_{1-2},\mathbf{T}_{2-3},\mathbf{T}_{3-4}$
+\end_inset
+
+ para hallar el campo eléctrico en el resto del espacio.
+ 
+\end_layout
+
+\begin_layout Standard
+Nuevamente usando el notebook escrito en python disponible online en .
+ En la simulación usamos 
+\begin_inset Formula $\omega=0.5$
+\end_inset
+
+a.u.
+ y los parámetros 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama"
+
+\end_inset
+
+, se procedió a graficar el campo eléctrico en función de la coordenada
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=2d$
+\end_inset
+
+, este se muestra a continuación,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename a_electric_field.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica del campo eléctrico en función de la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=2d$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+e)
+\end_layout
+
+\end_inset
+
+ Ahora asuma que el medio que se coloca a la derecha de la lamina es un
+ dieléctrico de permitividad 
+\begin_inset Formula $2\varepsilon_{0}$
+\end_inset
+
+.
+ Dar respuesta nuevamente a la mismas preguntas desde (a) hasta (d).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+ 
+\series default
+Consideremos la región propuesta en el problema,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename e_figure.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Región del problema e).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces las matrices de transferencia entre las regiones 1-2, 2-3, 3-4
+ son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{T}_{1-2}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{0}} &  & \frac{Y_{0}-Y_{1}}{2Y_{0}}\\
+\\
+\frac{Y_{0}-Y_{1}}{2Y_{0}} &  & \frac{Y_{1}+Y_{0}}{2Y_{0}}
+\end{matrix}\right],\qquad\mathbf{T}_{2-3}=\left[\begin{matrix}e^{-ikd} &  & 0\\
+\\
+0 &  & e^{ikd}
+\end{matrix}\right],\qquad\mathbf{T}_{3-4}=\left[\begin{matrix}\frac{Y_{1}+\sqrt{2}Y_{0}}{2Y_{1}} &  & \frac{Y_{1}-\sqrt{2}Y_{0}}{2Y_{1}}\\
+\\
+\frac{Y_{1}-\sqrt{2}Y_{0}}{2Y_{1}} &  & \frac{Y_{1}+\sqrt{2}Y_{0}}{2Y_{1}}
+\end{matrix}\right].\label{eq:e_matrices}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la matriz de transferencia que convierte el campo eléctrico
+ de la región 1-4 es,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\mathbf{T}_{1-2}\mathbf{T}_{2-3}\mathbf{T}_{3-4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiendo esta matriz explícitamente tenemos,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\left[\begin{matrix}\frac{-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})+\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}} &  & \frac{-i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})+\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}}\\
+\\
+\frac{i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})+\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}} &  & \frac{i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})+\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Coeficientes de de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Sabemos que dada una matriz de transferencia 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+ que modele la incidencia normal de ondas planas linealmente polarizadas,
+ esta estará dada en términos de los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}=\left[\begin{matrix}\frac{1}{t} &  & \frac{-r'}{t}\\
+\\
+\frac{r}{t} &  & \frac{tt'-rr'}{t}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de la matriz 
+\series bold
+
+\begin_inset Formula $\mathbf{T}_{1-4}$
+\end_inset
+
+ 
+\series default
+reconocemos los coeficientes 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ , 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ como,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{1-4}=\frac{2Y_{0}Y_{1}}{\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})}, & \qquad & t'_{1-4}=\frac{2\sqrt{2}Y_{0}Y_{1}}{\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})},\\
+r_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})+\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})}, & \qquad & r'_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})-\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asimismo podemos dividir por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ todas las expresiones y usando 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ ,
+\begin_inset Newline linebreak
+\end_inset
+
+y 
+\begin_inset Formula $k=\frac{\omega}{v}=\frac{\omega}{c}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ obtenemos,
+\begin_inset Formula 
+\begin{equation}
+t_{1-4}=\sqrt{2}t'_{1-4}=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)-i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})-\frac{\omega_{p}^{2}}{\omega^{2}}\right)},\label{eq:e_t}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{1-4}=\frac{i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[(1-\sqrt{2})-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[(1-\sqrt{2})\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right]}{\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)-i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})-\frac{\omega_{p}^{2}}{\omega^{2}}\right)},\label{eq:e_r}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r'_{1-4}=\frac{i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[(1-\sqrt{2})-\frac{\omega_{p}^{2}}{\omega^{2}}\right]-\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[(1-\sqrt{2})\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right]}{\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)-i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left((1+\sqrt{2})-\frac{\omega_{p}^{2}}{\omega^{2}}\right)}.\label{eq:e_r_p}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora procederemos a graficar el módulo y la fase de los coeficientes.
+\end_layout
+
+\begin_layout Paragraph*
+Coeficientes de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos primero que 
+\begin_inset Formula $t_{1-4}\neq t'_{1-4}$
+\end_inset
+
+, esto era de esperarse ya que el sistema físico NO es simétrico respecto
+ a 
+\begin_inset Formula $d/2$
+\end_inset
+
+, para poder graficar estos dos coeficientes se procedió a fijar los parámetros
+ 
+\begin_inset Formula $\omega_{p}$
+\end_inset
+
+ , 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{p}=0.49,\qquad d=100.0,\qquad c=1.0.\label{eq:parama-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de transmisión
+ , primero utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+ se muestra el coeficiente 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+, 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_transmision_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_transmision_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_transmision_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_transmision_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficientes de reflexión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos nuevamente que 
+\begin_inset Formula $r_{1-4}\neq r'_{1-4}$
+\end_inset
+
+, sin embargo 
+\begin_inset Formula $\left|r_{1-4}\right|=\left|r'_{1-4}\right|$
+\end_inset
+
+ , lo que se espera por conservación de la energía, ahora usando los mismos
+ parámetros de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama-1"
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de reflexión
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_r"
+
+\end_inset
+
+ , primero se muestra el coeficiente 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_reflection_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_reflection_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_reflection_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_reflection_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Transmitancias 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ y Reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Recordando las expresiones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transmitance"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reflectance"
+
+\end_inset
+
+ y que para este problema 
+\begin_inset Formula $Y_{tr}/Y_{in}=\sqrt{2}$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $Y_{tr}/Y_{in}=1/\sqrt{2}$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , entonces resolvemos nuevamente usando el notebook escrito en python disponibl
+e online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+.
+ Se procedió a graficar las transmitancias y las reflectancias , utilizando
+ las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transmitance"
+
+\end_inset
+
+ se muestra las transmitancias 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ y con las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_r"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reflectance"
+
+\end_inset
+
+ se muestra las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_Trasmi_Refle_one.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename e_Trasmi_Refle_one_p.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancias, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+, y las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+ Se puede ver gráficamente que 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}=1$
+\end_inset
+
+y 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Campo eléctrico 
+\begin_inset Formula $Re(E)$
+\end_inset
+
+ en la región 
+\begin_inset Formula $z\in[-d,2d]$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+Ya que la onda incide desde la izquierda tenemos que el vector del campo
+ eléctrico viajante(onda hacia la izquierda - y onda hacia la derecha +)
+ en el plano 4 de la figura, es dado por ,
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+E_{4}^{+}\\
+E_{4}^{-}
+\end{array}\right)=\left(\begin{array}{c}
+t\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la evolución espacial del campo en la región 
+\begin_inset Formula $2\varepsilon_{0}$
+\end_inset
+
+ de la derecha es dada por la propagación de una onda hacia la derecha multiplic
+ada por el coeficiente de transmisión 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Para hallar el campo en las otras regiones usamos las matrices de transferencia
+ 
+\begin_inset Formula $\mathbf{T}_{1-2},\mathbf{T}_{2-3},\mathbf{T}_{3-4}$
+\end_inset
+
+ para hallar el campo eléctrico en el resto del espacio.
+ 
+\end_layout
+
+\begin_layout Standard
+Nuevamente usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+.
+ En la simulación usamos 
+\begin_inset Formula $\omega=0.5$
+\end_inset
+
+a.u.
+ y los parámetros 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama-1"
+
+\end_inset
+
+, se procedió a graficar el campo eléctrico en función de la coordenada
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=2d$
+\end_inset
+
+, este se muestra a continuación,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename e_electric_field.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica del campo eléctrico en función de la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=2d$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+f)
+\end_layout
+
+\end_inset
+
+ Finalmente, considere una nueva geometría para la que la región de permitividad
+ 
+\begin_inset Formula $2\varepsilon_{0}$
+\end_inset
+
+ tenga espesor finito 
+\begin_inset Formula $d$
+\end_inset
+
+ (igual al espesor de la lámina de plasma) y que el medio de la derecha
+ vuelva a ser vacío (vacío 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ + plasma 
+\begin_inset Formula $\varepsilon(\omega)$
+\end_inset
+
+ + dieléctrico 
+\begin_inset Formula $2\varepsilon_{0}$
+\end_inset
+
+ + vacío 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+).
+ Dar respuesta nuevamente a las mismas preguntas desde (a) hasta (d), pero
+ modificado en el apartado (d) el rango de muestreo del campo eléctrico,
+ siendo ahora desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=3d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+ 
+\series default
+Consideremos la región propuesta en el problema,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename f_figure.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Región del problema f).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces las matrices de transferencia entre las regiones 1-2, 2-3, 3-4,
+ 4-5 y 5-6 son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-2}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{0}} &  & \frac{Y_{0}-Y_{1}}{2Y_{0}}\\
+\\
+\frac{Y_{0}-Y_{1}}{2Y_{0}} &  & \frac{Y_{1}+Y_{0}}{2Y_{0}}
+\end{matrix}\right],\qquad\mathbf{T}_{2-3}=\left[\begin{matrix}e^{-ikd} &  & 0\\
+\\
+0 &  & e^{ikd}
+\end{matrix}\right],\qquad\mathbf{T}_{3-4}=\left[\begin{matrix}\frac{Y_{1}+\sqrt{2}Y_{0}}{2Y_{1}} &  & \frac{Y_{1}-\sqrt{2}Y_{0}}{2Y_{1}}\\
+\\
+\frac{Y_{1}-\sqrt{2}Y_{0}}{2Y_{1}} &  & \frac{Y_{1}+\sqrt{2}Y_{0}}{2Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{4-5}=\left[\begin{matrix}e^{-ik_{D}d} &  & 0\\
+\\
+0 &  & e^{ik_{D}d}
+\end{matrix}\right],\qquad\mathbf{T}_{5-6}=\left[\begin{matrix}\frac{\sqrt{2}Y_{0}+Y_{0}}{2\sqrt{2}Y_{0}} &  & \frac{\sqrt{2}Y_{0}-Y_{0}}{2\sqrt{2}Y_{0}}\\
+\\
+\frac{\sqrt{2}Y_{0}-Y_{0}}{2\sqrt{2}Y_{0}} &  & \frac{\sqrt{2}Y_{0}+Y_{0}}{2\sqrt{2}Y_{0}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la matriz de transferencia que convierte el campo eléctrico
+ de la región 1-6 es,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-6}=\mathbf{T}_{1-2}\mathbf{T}_{2-3}\mathbf{T}_{3-4}\mathbf{T}_{4-5}\mathbf{T}_{5-6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiendo esta matriz explícitamente tenemos,
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-6}=\left[\begin{matrix}\frac{-i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})+\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}} & \frac{-i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})+\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}}\\
+\\
+\frac{i\sin(kd)(Y_{1}^{2}-\sqrt{2}Y_{0}^{2})+\cos(kd)\left[(1-\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}} & \frac{i\sin(kd)(\sqrt{2}Y_{0}^{2}+Y_{1}^{2})+\cos(kd)\left[(1+\sqrt{2})Y_{0}Y_{1}\right]}{2Y_{0}Y_{1}}
+\end{matrix}\right]\left[\begin{matrix}\left(\frac{\sqrt{2}+1}{2\sqrt{2}}\right)e^{-ik_{D}d} & \left(\frac{\sqrt{2}-1}{2\sqrt{2}}\right)e^{ik_{D}d}\\
+\\
+\left(\frac{\sqrt{2}-1}{2\sqrt{2}}\right)e^{ik_{D}d} & \left(\frac{\sqrt{2}+1}{2\sqrt{2}}\right)e^{ik_{D}d}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos escribir esta matriz usando un poco de álgebra de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-6}=\left[\begin{matrix}T_{1-6}^{(1,1)} &  & T_{1-6}^{(1,2)}\\
+\\
+T_{1-6}^{(2,1)} &  & T_{1-6}^{(2,2)}
+\end{matrix}\right],
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde, 
+\begin_inset Formula 
+\[
+T_{1-6}^{(1,1)}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} }{2Y_{0}Y_{1}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{1-6}^{(1,2)}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{2Y_{0}Y_{1}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{1-6}^{(2,1)}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{2Y_{0}Y_{1}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{1-6}^{(2,2)}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} }{2Y_{0}Y_{1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Coeficientes de de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Sabemos que dada una matriz de transferencia 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+ que modele la incidencia normal de ondas planas linealmente polarizadas,
+ esta estará dada en términos de los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}=\left[\begin{matrix}\frac{1}{t} &  & \frac{-r'}{t}\\
+\\
+\frac{r}{t} &  & \frac{tt'-rr'}{t}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de la matriz 
+\series bold
+
+\begin_inset Formula $\mathbf{T}_{1-6}$
+\end_inset
+
+ 
+\series default
+reconocemos los coeficientes 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+ , 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+ como,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{1-6}=\frac{2Y_{0}Y_{1}}{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r'_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t'_{1-6}=\frac{2Y_{0}Y_{1}}{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} }.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asimismo podemos dividir por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ todas las expresiones y usando 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ ,
+\begin_inset Newline linebreak
+\end_inset
+
+, 
+\begin_inset Formula $k=\frac{\omega}{v}=\frac{\omega}{c}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ y 
+\begin_inset Formula $k_{D}=\frac{\omega}{v_{D}}=\frac{\omega}{c}\sqrt{2}$
+\end_inset
+
+obtenemos,
+\size tiny
+
+\begin_inset Formula 
+\begin{equation}
+t_{1-6}=t'_{1-6}=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} },\label{eq:f_t}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+\begin_inset Formula 
+\begin{equation}
+r_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} },\label{eq:f_r}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+\begin_inset Formula 
+\begin{equation}
+r'_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ +i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }.\label{eq:e_f_p}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora procederemos a graficar el módulo y la fase de los coeficientes.
+\end_layout
+
+\begin_layout Paragraph*
+Coeficientes de transmisión 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+ y 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos primero que 
+\begin_inset Formula $t_{1-6}=t'_{1-6}$
+\end_inset
+
+, esto era de esperarse ya que el sistema inicia y termina en el mismo medio,
+ vacío, y adicionalmente por que la energía se conserva, para poder graficar
+ estos dos coeficientes se procedió a fijar los parámetros 
+\begin_inset Formula $\omega_{p}$
+\end_inset
+
+ , 
+\begin_inset Formula $d$
+\end_inset
+
+, 
+\begin_inset Formula $c$
+\end_inset
+
+, como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{p}=0.49,\qquad d=100.0,\qquad c=1.0.\label{eq:parama-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de transmisión
+ , primero utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+ se muestra el coeficiente 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+, 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_transmision_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_transmision_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t_{1-6}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_transmision_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_transmision_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $t'_{1-6}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficientes de reflexión 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos nuevamente que 
+\begin_inset Formula $r_{1-6}\neq r'_{1-6}$
+\end_inset
+
+, sin embargo 
+\begin_inset Formula $\left|r_{1-6}\right|=\left|r'_{1-6}\right|$
+\end_inset
+
+ , lo que se espera por conservación de la energía, ahora usando los mismos
+ parámetros de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama-1-1"
+
+\end_inset
+
+, se procedió a graficar el módulo y la fase de los coeficientes de reflexión
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_r"
+
+\end_inset
+
+ , primero se muestra el coeficiente 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_reflection_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_reflection_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r_{1-6}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De igual manera se obtuvo el coeficiente 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+ utilizando la ecuación 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_reflection_p_mod.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modulo del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_reflection_p_pha.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase del coeficiente de transmisión 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fase y modulo de el coeficiente de transmisión 
+\begin_inset Formula $r'_{1-6}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}-\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Transmitancias 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ y Reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Recordando las expresiones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transmitance"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reflectance"
+
+\end_inset
+
+ y que para este problema 
+\begin_inset Formula $Y_{tr}/Y_{in}=\sqrt{2}$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $Y_{tr}/Y_{in}=1/\sqrt{2}$
+\end_inset
+
+ para 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , entonces resolvemos nuevamente usando el notebook escrito en python disponibl
+e online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+.
+ Se procedió a graficar las transmitancias y las reflectancias , utilizando
+ las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_t"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transmitance"
+
+\end_inset
+
+ se muestra las transmitancias 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ y con las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:e_r"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:reflectance"
+
+\end_inset
+
+ se muestra las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_Trasmi_Refle_one.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename f_Trasmi_Refle_one_p.png
+	lyxscale 70
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancia, 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+ , la reflectancia 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ y su suma 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'$
+\end_inset
+
+ en función de la frecuencia con unidades arbitrarias para 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de las transmitancias, 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{T}'$
+\end_inset
+
+, y las reflectancias 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}'$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ para la interfaz 
+\begin_inset Formula $\varepsilon_{0}-\varepsilon(\omega)-2\varepsilon_{0}-\varepsilon_{0}$
+\end_inset
+
+.
+ Se puede ver gráficamente que 
+\begin_inset Formula $\mathcal{T}+\mathcal{R}=1$
+\end_inset
+
+y 
+\begin_inset Formula $\mathcal{T}'+\mathcal{R}'=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Campo eléctrico 
+\begin_inset Formula $Re(E)$
+\end_inset
+
+ en la región 
+\begin_inset Formula $z\in[-d,3d]$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+Ya que la onda incide desde la izquierda tenemos que el vector del campo
+ eléctrico viajante(onda hacia la izquierda - y onda hacia la derecha +)
+ en el plano 4 de la figura, es dado por ,
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+E_{6}^{+}\\
+E_{6}^{-}
+\end{array}\right)=\left(\begin{array}{c}
+t\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la evolución espacial del campo en la región 
+\begin_inset Formula $\varepsilon_{0}$
+\end_inset
+
+ de la derecha es dada por la propagación de una onda hacia la derecha multiplic
+ada por el coeficiente de transmisión 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Para hallar el campo en las otras regiones usamos las matrices de transferencia
+ 
+\begin_inset Formula $\mathbf{T}_{1-2},\mathbf{T}_{2-3},\mathbf{T}_{3-4},\mathbf{T}_{4-5},\mathbf{T}_{5-6}$
+\end_inset
+
+ para hallar el campo eléctrico en el resto del espacio.
+ 
+\end_layout
+
+\begin_layout Standard
+Nuevamente usando el notebook escrito en python disponible online en 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://goo.gl/BuxA4s
+\end_layout
+
+\end_inset
+
+, En la simulación usamos 
+\begin_inset Formula $\omega=0.5$
+\end_inset
+
+a.u.
+ y los parámetros 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:parama-1"
+
+\end_inset
+
+, se procedió a graficar el campo eléctrico en función de la coordenada
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=3d$
+\end_inset
+
+, este se muestra a continuación,
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename f_electric_field.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica del campo eléctrico en función de la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+, desde 
+\begin_inset Formula $z=-d$
+\end_inset
+
+ hasta 
+\begin_inset Formula $z=3d$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

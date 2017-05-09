@@ -1,0 +1,726 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{amsmath} % or simply amstext
+\newcommand{\angstrom}{\textup{\AA}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Solución - Parcial 2 : Electrodinámica II
+\end_layout
+
+\begin_layout Author
+Keith Patarroyo
+\end_layout
+
+\begin_layout Date
+9 de Mayo de 2017
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Componente para entregar el martes 09 de Mayo de 2017:
+\end_layout
+
+\begin_layout Section*
+Problema 2
+\end_layout
+
+\begin_layout Standard
+Sea una lámina plana de espesor 
+\begin_inset Formula $d$
+\end_inset
+
+ cuya permitividad se corresponde con el modelo de plasma para altas frecuencias
+ 
+\begin_inset Formula $(\omega\gg\omega_{0},\:\omega\gg\Gamma)$
+\end_inset
+
+, es decir, 
+\begin_inset Formula $\varepsilon(\omega)=\varepsilon_{0}(1-\omega_{p}^{2}/\omega^{2})$
+\end_inset
+
+.
+ Dicha lámina está rodeada de vacío.
+ Considere la incidencia normal de ondas planas que están linealmente polarizada
+s.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+Escriba la matriz de transferencia de la estructura tomando como planos
+ de referencia dos planos situados por fuera de la lámina pero a una distancia
+ infinitesimal de esta , es decir, en 
+\begin_inset Formula $z=0^{-}$
+\end_inset
+
+ y 
+\begin_inset Formula $z=d^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+\end_layout
+
+\begin_layout Standard
+Consideremos la región propuesta en el problema,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Ortoedro.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Región del problema inicial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces las matrices de transferencia entre las regiones 1-2, 2-3, 3-4
+ son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-2}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{0}} &  & \frac{Y_{0}-Y_{1}}{2Y_{0}}\\
+\\
+\frac{Y_{0}-Y_{1}}{2Y_{0}} &  & \frac{Y_{1}+Y_{0}}{2Y_{0}}
+\end{matrix}\right],\qquad\mathbf{T}_{2-3}=\left[\begin{matrix}e^{-ikd} &  & 0\\
+\\
+0 &  & e^{ikd}
+\end{matrix}\right],\qquad\mathbf{T}_{3-4}=\left[\begin{matrix}\frac{Y_{1}+Y_{0}}{2Y_{1}} &  & \frac{Y_{1}-Y_{0}}{2Y_{1}}\\
+\\
+\frac{Y_{1}-Y_{0}}{2Y_{1}} &  & \frac{Y_{1}+Y_{0}}{2Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la matriz de transferencia que convierte el campo eléctrico
+ de la región 1-4 es,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\mathbf{T}_{1-2}\mathbf{T}_{2-3}\mathbf{T}_{3-4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiendo esta matriz explícitamente tenemos,
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\left[\begin{matrix}\frac{e^{-ikd}(Y_{1}+Y_{0})^{2}-(Y_{1}-Y_{0})^{2}e^{ikd}}{4Y_{0}Y_{1}} &  & \frac{-e^{-ikd}(Y_{1}^{2}-Y_{0}^{2})+(Y_{0}^{2}-Y_{1}^{2})e^{ikd}}{4Y_{0}Y_{1}}\\
+\\
+\frac{-e^{-ikd}(Y_{0}^{2}-Y_{1}^{2})+(Y_{0}^{2}-Y_{1}^{2})e^{ikd}}{4Y_{0}Y_{1}} &  & \frac{-e^{-ikd}(Y_{0}-Y_{1})^{2}+(Y_{0}+Y_{1})^{2}e^{ikd}}{4Y_{0}Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos escribir esta matriz usando un poco de álgebra de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}_{1-4}=\left[\begin{matrix}\frac{-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})+\cos(kd)(2Y_{0}Y_{1})}{2Y_{0}Y_{1}} &  & \frac{i\sin(kd)(Y_{0}^{2}-Y_{1}^{2})}{2Y_{0}Y_{1}}\\
+\\
+\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{2Y_{0}Y_{1}} &  & \frac{i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})+\cos(kd)(2Y_{0}Y_{1})}{2Y_{0}Y_{1}}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+Grafique los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, mostrando separadamente sus correspondientes módulos y fases en función
+ de la frecuencia 
+\begin_inset Formula $\omega$
+\end_inset
+
+.(4 gráficas de módulos y 4 gráficas de fases)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+R.
+\end_layout
+
+\begin_layout Standard
+Sabemos que dada una matriz de transferencia 
+\begin_inset Formula $\mathbf{T}$
+\end_inset
+
+ que modele la incidencia normal de ondas planas linealmente polarizadas,
+ esta estará dada en términos de los coeficientes de transmisión, 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $t'$
+\end_inset
+
+, y de reflexión, 
+\begin_inset Formula $r$
+\end_inset
+
+ y 
+\begin_inset Formula $r'$
+\end_inset
+
+, de la siguiente manera,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{T}=\left[\begin{matrix}\frac{1}{t} &  & \frac{-r'}{t}\\
+\\
+\frac{r}{t} &  & \frac{tt'-rr'}{t}
+\end{matrix}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de la matriz 
+\series bold
+
+\begin_inset Formula $\mathbf{T}_{1-4}$
+\end_inset
+
+ 
+\series default
+reconocemos los coeficientes 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+ , 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+ como,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{1-4}=\frac{2Y_{0}Y_{1}}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}, & \qquad & t'_{1-4}=\frac{2Y_{0}Y_{1}\cos(2kd)}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})},\\
+r_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}, & \qquad & r'_{1-4}=\frac{i\sin(kd)(Y_{1}^{2}-Y_{0}^{2})}{\cos(kd)(2Y_{0}Y_{1})-i\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora procedemos a graficar el módulo y la fase de los coeficientes.
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficiente de transmisión 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Primero procedemos a escribir explícitamente la parte imaginaria y parte
+ real del número complejo 
+\begin_inset Formula $t_{1-4}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{1-4}=\frac{2Y_{0}Y_{1}\cos(kd)(2Y_{0}Y_{1})}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}+i\frac{2Y_{0}Y_{1}\sin(kd)(Y_{0}^{2}+Y_{1}^{2})}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la fase y el módulo serían,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|t_{1-4}|=\frac{2Y_{0}Y_{1}\left(\left[\cos(kd)(2Y_{0}Y_{1})\right]^{2}+\left[\sin(kd)(Y_{0}^{2}+Y_{1}^{2})\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{t(1-4)}=\tan^{-1}\left(\tan(kd)\frac{(Y_{0}^{2}+Y_{1}^{2})}{(2Y_{0}Y_{1})}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora haciendo 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ , 
+\begin_inset Formula $k=\frac{\omega}{c}$
+\end_inset
+
+ , multiplicando por 
+\begin_inset Formula $1=Y_{0}^{4}/Y_{0}^{4}$
+\end_inset
+
+ en 
+\begin_inset Formula $|t_{1-4}|$
+\end_inset
+
+ y multiplicando por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ dentro de la arcotangente en 
+\begin_inset Formula $\theta_{t(1-4)}$
+\end_inset
+
+ obtenemos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|t_{1-4}|=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\left(\left[\cos\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)\right]^{2}+\left[\sin\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)^{2}+\sin^{2}\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{t(1-4)}=\tan^{-1}\left(\tan\left(\frac{\omega d}{c}\right)\frac{\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)}{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficiente de transmisión 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Primero procedemos a escribir explícitamente la parte imaginaria y parte
+ real del número complejo 
+\begin_inset Formula $t'_{1-4}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t'_{1-4}=\frac{2Y_{0}Y_{1}\cos(kd)(2Y_{0}Y_{1})\cos(2kd)}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}+i\frac{2Y_{0}Y_{1}\sin(kd)(Y_{0}^{2}+Y_{1}^{2})\cos(2kd)}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la fase y el módulo serían,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|t'_{1-4}|=\frac{|2Y_{0}Y_{1}\cos(2kd)|\left(\left[\cos(kd)(2Y_{0}Y_{1})\right]^{2}+\left[\sin(kd)(Y_{0}^{2}+Y_{1}^{2})\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{t'(1-4)}=\tan^{-1}\left(\tan(kd)\frac{(Y_{0}^{2}+Y_{1}^{2})}{(2Y_{0}Y_{1})}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora haciendo 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ , 
+\begin_inset Formula $k=\frac{\omega}{c}$
+\end_inset
+
+ , multiplicando por 
+\begin_inset Formula $1=Y_{0}^{4}/Y_{0}^{4}$
+\end_inset
+
+ en 
+\begin_inset Formula $|t'_{1-4}|$
+\end_inset
+
+ y multiplicando por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ dentro de la arcotangente en 
+\begin_inset Formula $\theta_{t'(1-4)}$
+\end_inset
+
+ obtenemos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|t'_{1-4}|=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}|\cos\left(\frac{2\omega d}{c}\right)|\left(\left[\cos\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)\right]^{2}+\left[\sin\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)^{2}+\sin^{2}\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{t'(1-4)}=\tan^{-1}\left(\tan\left(\frac{\omega d}{c}\right)\frac{\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)}{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Coeficientes de reflexión 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+ y 
+\begin_inset Formula $r'_{1-4}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Notamos primero que 
+\begin_inset Formula $r_{1-4}=r'_{1-4}$
+\end_inset
+
+, ahora procedemos a escribir explícitamente la parte imaginaria y parte
+ real del número complejo 
+\begin_inset Formula $r_{1-4}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{1-4}=r'_{1-4}=\frac{-\sin^{2}(kd)(Y_{1}^{4}-Y_{0}^{4})}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}+i\frac{\sin(kd)\cos(kd)(Y_{1}^{2}-Y_{0}^{2})(2Y_{0}Y_{1})}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la fase y el módulo serían,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|r_{1-4}|=|r'_{1-4}|=\frac{\left|\sin(kd)(Y_{1}^{2}-Y_{0}^{2})\right|\left(\left[\sin(kd)(Y_{1}^{2}+Y_{0}^{2})\right]^{2}+\left[\cos(kd)(2Y_{0}Y_{1})\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}(kd)(2Y_{0}Y_{1})^{2}+\sin^{2}(kd)(Y_{0}^{2}+Y_{1}^{2})^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{r(1-4)}=\theta_{r'(1-4)}=\tan^{-1}\left(\cot(kd)\frac{(-2Y_{0}Y_{1})}{(Y_{0}^{2}+Y_{1}^{2})}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora haciendo 
+\begin_inset Formula $Y_{1}=\sqrt{\frac{\varepsilon(\omega)}{\mu_{0}}}=Y_{0}\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}$
+\end_inset
+
+ , 
+\begin_inset Formula $k=\frac{\omega}{c}$
+\end_inset
+
+ , multiplicando por 
+\begin_inset Formula $1=Y_{0}^{4}/Y_{0}^{4}$
+\end_inset
+
+ en 
+\begin_inset Formula $|r_{1-4}|$
+\end_inset
+
+ y multiplicando por 
+\begin_inset Formula $1=Y_{0}^{2}/Y_{0}^{2}$
+\end_inset
+
+ dentro de la arcotangente en 
+\begin_inset Formula $\theta_{r(1-4)}$
+\end_inset
+
+ obtenemos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|r_{1-4}|=|r'_{1-4}|=\frac{\left|\frac{\omega_{p}^{2}}{\omega^{2}}\sin\left(\frac{\omega d}{c}\right)\right|\left(\left[\sin\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)\right]^{2}+\left[\cos\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)\right]^{2}\right)^{\frac{1}{2}}}{\cos^{2}\left(\frac{\omega d}{c}\right)\left(2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right)^{2}+\sin^{2}\left(\frac{\omega d}{c}\right)\left(2-\frac{\omega_{p}^{2}}{\omega^{2}}\right)^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{r(1-4)}=\theta_{r'(1-4)}=\tan^{-1}\left(\cot\left(\frac{\omega d}{c}\right)\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{\left(\frac{\omega_{p}^{2}}{\omega^{2}}-2\right)}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
