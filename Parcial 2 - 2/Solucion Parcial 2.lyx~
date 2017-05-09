@@ -3525,7 +3525,7 @@ t_{1-6}=\frac{2Y_{0}Y_{1}}{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{
 \begin_layout Standard
 \begin_inset Formula 
 \[
-r_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+r_{1-6}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
 \]
 
 \end_inset
@@ -3536,7 +3536,7 @@ r_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\rig
 \begin_layout Standard
 \begin_inset Formula 
 \[
-r'_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+r'_{1-6}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
 \]
 
 \end_inset
@@ -4662,7 +4662,7 @@ Campo eléctrico
 \begin_layout Standard
 Ya que la onda incide desde la izquierda tenemos que el vector del campo
  eléctrico viajante(onda hacia la izquierda - y onda hacia la derecha +)
- en el plano 4 de la figura, es dado por ,
+ en el plano 6 de la figura, es dado por ,
 \begin_inset Formula 
 \[
 \left(\begin{array}{c}

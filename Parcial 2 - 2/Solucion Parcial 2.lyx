@@ -3525,7 +3525,7 @@ t_{1-6}=\frac{2Y_{0}Y_{1}}{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{
 \begin_layout Standard
 \begin_inset Formula 
 \[
-r_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+r_{1-6}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
 \]
 
 \end_inset
@@ -3536,7 +3536,7 @@ r_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\rig
 \begin_layout Standard
 \begin_inset Formula 
 \[
-r'_{1-6}=\frac{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ +i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
+r'_{1-6}=\frac{\cos(k_{D}d)\left\{ i\sin(kd)\left[Y_{1}^{2}-Y_{0}^{2}\right]\right\} +\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[-Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)Y_{0}Y_{1}\right\} }{\cos(k_{D}d)\left\{ -i\sin(kd)\left[Y_{1}^{2}+Y_{0}^{2}\right]+\cos(kd)2Y_{0}Y_{1}\right\} -\frac{i\sin(k_{D}d)}{\sqrt{2}}\left\{ -i\sin(kd)\left[Y_{1}^{2}+2Y_{0}^{2}\right]+\cos(kd)3Y_{0}Y_{1}\right\} },
 \]
 
 \end_inset
@@ -3594,7 +3594,7 @@ t_{1-6}=t'_{1-6}=\frac{2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{\cos(\frac{\
 \size tiny
 \begin_inset Formula 
 \begin{equation}
-r_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} },\label{eq:f_r}
+r_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} +\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ +i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} },\label{eq:f_r}
 \end{equation}
 
 \end_inset
@@ -3607,7 +3607,7 @@ r_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\
 \size tiny
 \begin_inset Formula 
 \begin{equation}
-r'_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ +i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }.\label{eq:e_f_p}
+r'_{1-6}=\frac{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[-\frac{\omega_{p}^{2}}{\omega^{2}}\right]\right\} +\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[\frac{\omega_{p}^{2}}{\omega^{2}}+1\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }{\cos(\frac{\omega}{c}\sqrt{2}d)\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[2-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)2\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} -\frac{i\sin(\frac{\omega}{c}\sqrt{2}d)}{\sqrt{2}}\left\{ -i\sin\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)\left[3-\frac{\omega_{p}^{2}}{\omega^{2}}\right]+\cos\left(\frac{\omega d\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}}{c}\right)3\sqrt{1-\frac{\omega_{p}^{2}}{\omega^{2}}}\right\} }.\label{eq:e_f_p}
 \end{equation}
 
 \end_inset
